@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;800&display=swap');
+
 :root {
   --body-color: linear-gradient(217deg, #598349, #838149 70.71%), linear-gradient(127deg, #598349, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, #838149, rgba(0,0,255,0) 70.71%);
 }
@@ -6,6 +8,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+  font-weight: 300;
 }
 
 html, body, #__next {
@@ -43,10 +47,29 @@ html, body, #__next {
     flex-direction: column;
     align-items: stretch;
     justify-content: center;
+    
+    
 
     .content_slider {
+      display: flex;
       height: 460px;
       border: 3px dashed rgb(255 255 255 / 25%);
+      .imagtikva {
+        background: url("../images/home1-img.png")no-repeat;
+        height: 100%;
+        width: 50%;
+        padding-right: 180px;
+        background-size: contain;
+      }
+      .content_slider_text_text {
+        width: fit-content;
+        display: flex;
+        font-weight: 800;
+        font-size: 72px;
+        color: white;
+        
+      }
     }
+    
   }
 }
