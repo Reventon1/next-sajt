@@ -38,7 +38,70 @@ html, body, #__next {
 
   .site_menu {
     height: 80px;
-
+    display: flex;
+    .logo_and_name {
+      display: flex;
+      width: 15%;
+      height: 100%;
+      align-items: center;
+      .logo {
+        background: url(../images/logo.png)no-repeat;
+        background-size: 100%;
+        margin-right: 12px;
+        width: 30px;
+        height: 30px;
+      }
+      .site_name {
+        font-weight: 200;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+      }
+      
+    }
+    .menu_buttons {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-left: 404.22px;
+      .home {
+        font-weight: 200;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+      }
+      .about {
+        font-weight: 200;
+        margin-left: 40px;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+      }
+      .candy{
+        font-weight: 200;
+        font-size: 18px;
+        margin-left: 40px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+      }
+      .new{
+        font-weight: 200;
+        margin-left: 40px;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+      }
+      .support{
+        border: solid rgba(189, 189, 189, 0.726) 2px;
+        padding: 10px 15px 10px 15px;
+        border-radius: 30px;
+        font-weight: 200;
+        margin-left: 30px;
+        font-size: 18px;
+        color: rgb(255, 255, 255);
+        cursor: pointer;
+      }
+    }
+    
   }
 
   .site_content {
@@ -53,22 +116,68 @@ html, body, #__next {
     .content_slider {
       display: flex;
       height: 460px;
-      border: 3px dashed rgb(255 255 255 / 25%);
-      .imagtikva {
-        background: url("../images/home1-img.png")no-repeat;
-        height: 100%;
-        width: 50%;
-        padding-right: 180px;
-        background-size: contain;
-      }
-      .content_slider_text_text {
-        width: fit-content;
+      // border: 3px dashed rgb(255 255 255 / 25%);
+      .content_slider_image {
+        width: 61%;
         display: flex;
-        font-weight: 800;
-        font-size: 72px;
-        color: white;
-        
+        .imagtikva {
+          background: url("../images/home1-img.png")no-repeat;
+          display: flex;
+          height: 454px;
+          width: 420px;
+          background-size: 100%;
+          margin: 0 83.405px 0 83.405px;
+        }
       }
+      .content_slider_text {
+        display: flex;
+        flex-direction: column;
+        // margin-left: 150px;
+        width: 39%;
+        .scary_ghost_2020 {
+          font-weight: 400;
+          font-size: 16px;
+          color: white;
+        }
+        .content_slider_text_text {
+          font-weight: 800;
+          font-size: 54px;
+          padding-right: 100px;
+          color: white;
+        }
+        .about_ghost {
+          height: 100px;
+          font-weight: 200;
+          font-size: 15px;
+          color: rgba(255, 255, 255, 0.534);
+        }
+
+        .slider_buttons {
+          display: flex;
+          justify-content: space-between;
+
+          .red_button {
+          font-weight: 200;
+          font-size: 18px;
+          color: rgb(255, 255, 255);
+          border: 15px solid;
+          border-radius: 6px;
+          background-color: #ff5506;
+          border-color:#ff5506;
+          cursor: pointer;
+          }
+          .record{ 
+            display: flex;
+            font-weight: 200;
+            font-size: 18px;
+            margin-right: 50px;
+            align-items: center;
+            color: rgb(255, 255, 255);
+            cursor: pointer;
+          }
+        }
+      }
+      
     }
     
   }
