@@ -1,7 +1,7 @@
 import Menu from "../components/menu";
 
 
-export default function Index() {
+export default function About() {
   return (
     <div className="site">
       <div className="site_wrapper">
@@ -9,8 +9,8 @@ export default function Index() {
           <Menu></Menu>
         </div>
         <div className="site_content">
-          <div className="content_slider">
-          
+          <div className="content_about">
+           О
           </div>
         </div>
       </div>

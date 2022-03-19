@@ -1,14 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300;800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 
 :root {
   --body-color: linear-gradient(217deg, #598349, #838149 70.71%), linear-gradient(127deg, #598349, rgba(0,255,0,0) 70.71%), linear-gradient(336deg, #838149, rgba(0,0,255,0) 70.71%);
 }
 
 * {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Prompt', sans-serif;
   font-weight: 300;
 }
 
@@ -16,6 +18,20 @@ html, body, #__next {
   width: 100%;
   height: 100%;
 }
+
+a{
+  padding-left: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: black;
+  transition: 0.2s;
+}
+
+
+
 
 .site {
   width: 100%;
@@ -38,72 +54,34 @@ html, body, #__next {
 
   .site_menu {
     height: 80px;
+    padding-top: 24px;
     display: flex;
-    .logo_and_name {
-      display: flex;
-      width: 15%;
-      height: 100%;
-      align-items: center;
-      .logo {
-        background: url(../images/logo.png)no-repeat;
-        background-size: 100%;
-        margin-right: 12px;
-        width: 30px;
-        height: 30px;
-      }
-      .site_name {
-        font-weight: 200;
-        font-size: 18px;
-        color: rgb(255, 255, 255);
-      }
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+
+    
       
-    }
-    .menu_buttons {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      margin-left: 404.22px;
-      .home {
-        font-weight: 200;
-        font-size: 18px;
-        color: rgb(255, 255, 255);
-        cursor: pointer;
+      .menu_logo {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: center;
+      
+    
+        .logo_text {
+          font-size: 24px;
+          color: white;
+          font-weight: 700;
+          display: inline-block;
+          align-items: center;
+          margin-left: 24px;
+        }
       }
-      .about {
-        font-weight: 200;
-        margin-left: 40px;
-        font-size: 18px;
-        color: rgb(255, 255, 255);
-        cursor: pointer;
-      }
-      .candy{
-        font-weight: 200;
-        font-size: 18px;
-        margin-left: 40px;
-        color: rgb(255, 255, 255);
-        cursor: pointer;
-      }
-      .new{
-        font-weight: 200;
-        margin-left: 40px;
-        font-size: 18px;
-        color: rgb(255, 255, 255);
-        cursor: pointer;
-      }
-      .support{
-        border: solid rgba(189, 189, 189, 0.726) 2px;
-        padding: 10px 15px 10px 15px;
-        border-radius: 30px;
-        font-weight: 200;
-        margin-left: 30px;
-        font-size: 18px;
-        color: rgb(255, 255, 255);
-        cursor: pointer;
-      }
-    }
     
   }
-
   .site_content {
     height: 100%;
     display: flex;
@@ -117,68 +95,8 @@ html, body, #__next {
       display: flex;
       height: 460px;
       // border: 3px dashed rgb(255 255 255 / 25%);
-      .content_slider_image {
-        width: 61%;
-        display: flex;
-        .imagtikva {
-          background: url("../images/home1-img.png")no-repeat;
-          display: flex;
-          height: 454px;
-          width: 420px;
-          background-size: 100%;
-          margin: 0 83.405px 0 83.405px;
-        }
       }
-      .content_slider_text {
-        display: flex;
-        flex-direction: column;
-        // margin-left: 150px;
-        width: 39%;
-        .scary_ghost_2020 {
-          font-weight: 400;
-          font-size: 16px;
-          color: white;
-        }
-        .content_slider_text_text {
-          font-weight: 800;
-          font-size: 54px;
-          padding-right: 100px;
-          color: white;
-        }
-        .about_ghost {
-          height: 100px;
-          font-weight: 200;
-          font-size: 15px;
-          color: rgba(255, 255, 255, 0.534);
-        }
-
-        .slider_buttons {
-          display: flex;
-          justify-content: space-between;
-
-          .red_button {
-          font-weight: 200;
-          font-size: 18px;
-          color: rgb(255, 255, 255);
-          border: 15px solid;
-          border-radius: 6px;
-          background-color: #ff5506;
-          border-color:#ff5506;
-          cursor: pointer;
-          }
-          .record{ 
-            display: flex;
-            font-weight: 200;
-            font-size: 18px;
-            margin-right: 50px;
-            align-items: center;
-            color: rgb(255, 255, 255);
-            cursor: pointer;
-          }
-        }
-      }
-      
     }
-    
   }
-}
+
+
