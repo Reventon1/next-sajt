@@ -10,7 +10,15 @@ export default function About() {
         </div>
         <div className="site_content">
           <div className="content_about">
-           О
+            <div className="about_about">
+              <div className="day">About Halloween Night</div>
+              <div className="night"><p>Night at all the saints, or all the [something?], is celebrated on October 31 and it is a very fun international celebration, this celebration comes from ancient origins, and is already celebrated by everyone.</p></div>
+              <div className="about_button">Know more</div>
+            </div>
+            <div className="about_img"></div>
+            
+           
+           
           </div>
         </div>
       </div>

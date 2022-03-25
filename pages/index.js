@@ -10,7 +10,16 @@ export default function Index() {
         </div>
         <div className="site_content">
           <div className="content_slider">
-          
+            <div className="ghost_img"></div>
+            <div className="ghost_text">
+              <div className="year">#1 TOP 1 SCARIEST GHOST 2020</div>
+              <div className="tricks">UOOOO TRICK OR TREAT!!</div>
+              <div className="ghost_talk">Hi, I'm Reiza, people call me "El Labu". I'm currently trying to learn something new, building my own bike with parts made only in Malaysia.</div>
+              <div className="ghost_buttons">
+                <div className="button1">Book Now</div>
+                <div className="button2">Track Record ➜</div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
